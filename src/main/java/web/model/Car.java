@@ -1,23 +1,26 @@
-package model;
+package web.model;
 
 public class Car {
+
+    private long id;
     private String model;
     private int number;
-    private String color;
 
-    public Car(String model, int number, String color) {
+    public Car(long id, String model, int number) {
+        this.id = id;
         this.model = model;
         this.number = number;
-        this.color = color;
     }
+
+    public long getId() { return id; }
+
+    public void setId(long id) { this.id = id; }
+
     public void setModel(String model) {
         this.model = model;
     }
     public void setNumber(int number) {
         this.number = number;
-    }
-    public void setColor(String color) {
-        this.color = color;
     }
 
     public String getModel() {
@@ -26,16 +29,13 @@ public class Car {
     public int getNumber() {
         return number;
     }
-    public String getColor() {
-        return color;
-    }
 
     @Override
     public String toString() {
         return "Car{" +
-                "model='" + model + '\'' +
+                "id=" + id +
+                ", model='" + model + ' ' +
                 ", number=" + number +
-                ", color='" + color + '\'' +
                 '}';
     }
 }
