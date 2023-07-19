@@ -6,7 +6,11 @@ import java.util.List;
 import java.util.Optional;
 
 public interface CarDao {
-    public void addCar(Car car);
-    public Car getCar(long id);
-    public List<Car> getAllCar();
+    void addCar(Car car);
+
+    Car getCar(long id);
+
+    List<Car> getCarList(long count);
+
+    List<Car> getAllCar();
 }

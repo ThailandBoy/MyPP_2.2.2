@@ -12,13 +12,18 @@ public class Car {
         this.number = number;
     }
 
-    public long getId() { return id; }
+    public long getId() {
+        return id;
+    }
 
-    public void setId(long id) { this.id = id; }
+    public void setId(long id) {
+        this.id = id;
+    }
 
     public void setModel(String model) {
         this.model = model;
     }
+
     public void setNumber(int number) {
         this.number = number;
     }
@@ -26,6 +31,7 @@ public class Car {
     public String getModel() {
         return model;
     }
+
     public int getNumber() {
         return number;
     }
